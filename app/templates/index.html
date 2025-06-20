@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to Microblog!</title>
+        {% endif %}
+
+        <style>
+        
+            body {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: aliceblue;">Hello, {{user.username}}!</h1>
+        <h2 style="color: aliceblue;">I am from the beautiful country of Belize!</h2>
+    </body>
+</html>
