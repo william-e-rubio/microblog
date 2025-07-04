@@ -10,12 +10,15 @@
         <style>
         
             body {
-                background-color: black;
+                background-color: white;
             }
         </style>
     </head>
     <body>
-        <h1 style="color: aliceblue;">Hello, {{user.username}}!</h1>
-        <h2 style="color: aliceblue;">I am from the beautiful country of Belize!</h2>
+        <h1>Hello, {{user.username}}!</h1>
+        {% for post in posts %}
+        <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+        {% endfor %}
+
     </body>
 </html>
